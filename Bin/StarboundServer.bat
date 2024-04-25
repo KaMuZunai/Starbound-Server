@@ -1,7 +1,11 @@
 @echo off
 setlocal EnableDelayedExpansion
 title Starbound Master
-color 0f
+findstr ""Color" :" configs\CmdWindowColors.config > Vare.txt
+set /P varE=<Vare.txt
+del Vare.txt
+set varE=%varE:~11%
+color %varE%
 
 :RestartServer
 
@@ -14,21 +18,25 @@ findstr ""ServerRestartTimer" :" configs\RestartTimer.config > Vara.txt
 findstr ""BootConfigLocation" :" configs\BootConfigLocation.config > Varb.txt
 findstr ""LogfileLocation" :" configs\LogfileLocation.config > Varc.txt
 findstr ""LogLevel" :" configs\LogLevel.config > Vard.txt
+findstr ""StarHostVersion" :" configs\BitVersion.config > Varf.txt
 set /P varA=<Vara.txt
 set /P varB=<Varb.txt
 set /P varC=<Varc.txt
 set /P varD=<Vard.txt
+set /P varF=<Varf.txt
 del Vara.txt
 del Varb.txt
 del Varc.txt
 del Vard.txt
+del Varf.txt
 set varA=%varA:~24%
 set varB=%varB:~27%
 set varC=%varC:~24%
 set varD=%varD:~17%
+set varF=%varF:~21%
 
 timeout /t 1 >nul
-start "" /min /b StarHost.exe -bootconfig %varB% -loglevel %varD% -logfile %varC%
+start "" /min /b %varF% -bootconfig %varB% -loglevel %varD% -logfile %varC%
 timeout /t 15 >nul
 title Starbound Server Running^^!
 
