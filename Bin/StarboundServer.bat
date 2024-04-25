@@ -53,5 +53,5 @@ echo Restarting Server...
 echo ////////////////////////////////////////////////////////////////                                                                           
 title Restarting Server...
 timeout /t 1 >nul
-taskkill /IM StarHost.exe /F >nul
+taskkill /IM %varF% /F >nul
 goto RestartServer
