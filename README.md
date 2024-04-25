@@ -1,6 +1,6 @@
 # Starbound Windows Server With Automatic Restart
 	Made to make hosting Starbound Servers on personal devices less frustrating
-	NOTE: YOU MUST DRAG THE STARBOUND ASSETS FILE "Packed.pak" INTO THE "ServerAssets" FOLDER!
+	
 # File locations:
 ## Asset Directories and Default Configuration:
 - BootConfig.config > Bin\configs\BootConfig.config
