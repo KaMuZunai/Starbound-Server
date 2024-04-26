@@ -1,29 +1,67 @@
 # Starbound Windows Server With Automatic Restart
-	Made to make hosting Starbound Servers on personal devices less frustrating
+	Made to make hosting Starbound Servers on on windows devices easier while
+	easily allowing access for customization and having organized folders and files.
 	
-# File locations:
-## Asset Directories and Default Configuration:
-- BootConfig.config > Bin\configs\BootConfig.config
-- ServerAssets
-- ServerMods
+## How to Run?
+	Simply enter the "Bin" folder and run StarboundServer.bat and it will read all your
+	config files then run the server in the way you configured it.
 
-## Duration Between Automatic Server Restarts
-- RestartTimer.config > Bin\configs\RestartTimer.config
+## Configs
+	Most configuration files are stored at "Bin\configs" outside of the
+	StarboundServer.config which is located at "ServerUniverse\StarboundServer.config".
 
-## LogfileLocation Config
-- LogfileLocation.config Bin\configs\LogfileLocation.config
+## Saved Data
+	Saved Data of your planets is stored at "ServerUniverse\universe".
 
-## BootConfigLocation Config
-- BootConfigLocation.config Bin\configs\BootConfigLocation.config
-
-## Loglevel Config
-- LogLevel.config Bin\configs\LogLevel.config
+## Mods
+	Mod Folder is located at "ServerMods", the "Disabled" folder inside the "ServerMods"
+	folder is to throw mods inside of it to make them not get loaded by the server
+	without having to move them far away or delete them.
 
 ## Logs
-- StarboundServerLog.log > ServerUniverse\logs\StarboundServerLog.log
+	Logs by default are located at "ServerUniverse\logs", Host.log are spit out by the
+	program while the StarboundServerLog.log is being spit out by starbound itself.
 
-## Starbound Server Config
-- starbound_server.config > ServerUniverse\starbound_server.config
+## Server Assets
+	The server will read your base assets from "ServerAssets".
 
-## Universe Saved Data
-- universe > ServerUniverse\universe
+## Customization
+	The config files in "Bin\configs" can be configured to your liking to make the server
+	start with different aspects or read from different file locations of your choice!
+
+	- BitVersion.config: lets you choose between the 32bit and 64bit version.
+
+	- Bootconfig.config: lets you customize your "storage" and "asset" folder locations.
+
+	- BootconfigLocation.config: lets you customize the location of your Bootconfig.
+
+	- CmdWindowColors.config: lets you customize the colors of the server window while its running.
+
+	- HostLogfileLocation.config: lets you customize the location of your Host Logfile.
+
+	- LogfileLocation.config: lets you customize the location of your Starbound Logfile.
+
+	- Loglevel.config: lets you change between the "loglevel" which will affect what the server writes into your Starbound Logfile and what it displays inside the cmd window.
+
+	- RestartTimer.config: lets you change the time the server takes between automatic server restarts to remove performance issues which starbound servers suffer of after long uninterupted server activity.
+
+	- Universe_Server.config: lets you change a variety of things lime connection timeout or asset missmatch messages.
+
+	The config file StarboundServer.config in "ServerUniverse" can be configured aswell
+	to change important server aspects which include:
+
+	- Server Name
+
+	- Server Port
+
+	- Allow Admin Commands
+
+	- Allow Asset Mismatch
+
+	- Script Settings
+
+	- Max Team Size
+
+	- Max Player Count
+
+	and more!
