@@ -3,7 +3,7 @@
 	easily allowing access for customization and having organized folders and files.
 	
 ## How to Run?
-	Simply enter the "Bin" folder and run StarboundServer.bat and it will read all your
+	Simply enter the "Bin" folder and run StarboundServer.exe and it will read all your
 	config files then run the server in the way you configured it.
 
 ## Configs
